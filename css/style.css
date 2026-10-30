@@ -165,19 +165,6 @@ input[type=text] {
   opacity: 1;
 }
 
-.destacados-preview .destacados-preview-titulo {
-  font-size: 24px;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
-
-.destacados-preview:hover .destacados-preview-titulo {
-  opacity: 1;
-}
-
 /* Coincide con el cambio de columnas de Bootstrap (sm). */
 @media (max-width: 575.98px) {
   .destacados-container {
@@ -191,8 +178,4 @@ input[type=text] {
   .destacados-proyecto-vertical {
     height: 520px;
   }
-}
-
-
-
 }
