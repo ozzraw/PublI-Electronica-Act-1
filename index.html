@@ -41,8 +41,8 @@
 
 
  <!-- Proyectos desctacados IAN Ahora con bootstrap-->
-<h1 class="separacion"> Highlighted Projects </h1>
-  <section class="destacados-seccion" aria-labelledby="destacados-encabezado">
+<section class="destacados-seccion" aria-labelledby="destacados-encabezado">
+    <h1 class="destacados-encabezado" id="destacados-encabezado">Proyectos destacados</h1>
     <div class="destacados-container row g-0 flex-nowrap flex-column flex-sm-row">
       <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
         <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
@@ -60,28 +60,55 @@
       </div>
       <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
         <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
-          <div class="destacados-preview position-relative flex-fill overflow-hidden">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-reproductor" data-youtube-id="W6VWfYvDp6I" data-youtube-embed="https://www.youtube.com/embed/W6VWfYvDp6I?si=Glj8OT7mNYrET9wA" aria-label="Reproducir VARG">
             <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/VARG.jpg" alt="Proyecto VARG">
             <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/varg.mp4" muted loop playsinline preload="none"></video>
-          </div>
+          </button>
         </section>
         <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
-          <div class="destacados-preview position-relative flex-fill overflow-hidden">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-rob-modal" aria-label="Ver ROB en grande">
             <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/ROB.jpg" alt="Proyecto ROB">
             <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/rob.mp4" muted loop playsinline preload="none"></video>
-          </div>
+          </button>
         </section>
       </div>
       <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
         <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-vertical">
-          <div class="destacados-preview position-relative flex-fill overflow-hidden">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-reproductor" data-youtube-id="TWjwLFihjBY" data-youtube-embed="https://www.youtube.com/embed/TWjwLFihjBY?si=hdKQr8_SlWZWrAzA" aria-label="Reproducir Boxing">
             <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/UFC.jpg" alt="Proyecto Boxing">
             <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/box.mp4" muted loop playsinline preload="none"></video>
-          </div>
+          </button>
         </section>
       </div>
     </div>
   </section>
+  <div class="modal fade" id="destacados-reproductor" tabindex="-1" aria-label="Reproductor de vídeo" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar reproductor"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="destacados-youtube" title="Reproductor de YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap abre el mismo vídeo de ROB en una ventana mas grande. -->
+  <div class="modal fade" id="destacados-rob-modal" tabindex="-1" aria-label="Vídeo de ROB" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-rob-video" class="w-100 d-block" src="previews/rob.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <!--upcoming date--> 
 <h1> Upcoming Dates </h1>
