@@ -8,9 +8,12 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(windowWidth, 800);
+    let canvas = createCanvas(windowWidth, 800);
+    canvas.parent("animacion");
     imageMode(CENTER);
 }
+
+canvas.parent("animacion");
 
 function draw() {
     background(0);
