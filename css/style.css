@@ -1,0 +1,133 @@
+/*Proyectos destacados */
+
+
+.destacados-seccion {
+  font-family: Arial, sans-serif;
+}
+
+.destacados-seccion .destacados-encabezado {
+  color: #c8c8c8;
+}
+
+.destacados-container {
+  display: flex;
+  background-color: rgba(250, 251, 252, 0);
+  gap: 0px;
+  height: 700px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0;
+}
+
+/* Las tres columnas tienen el mismo ancho. */
+.destacados-columna {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 0px;
+}
+
+/* Cada proyecto ocupa el espacio disponible en su columna. */
+.destacados-proyecto {
+  flex: 1;
+  min-height: 0;
+  background-color: #f1f1f100;
+  padding: 0;
+}
+
+.destacados-proyecto h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.destacados-proyecto-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.destacados-proyecto-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.destacados-proyecto-vertical img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+}
+
+.destacados-proyecto-horizontal img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.destacados-preview {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.destacados-preview img,
+.destacados-preview video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destacados-preview video {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.destacados-preview:hover video {
+  opacity: 1;
+}
+
+.destacados-preview .destacados-preview-titulo {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.destacados-preview:hover .destacados-preview-titulo {
+  opacity: 1;
+}
+/* En móviles, las columnas se colocan una debajo de otra. */
+@media (max-width: 600px) {
+  .destacados-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .destacados-proyecto {
+    flex: auto;
+    height: 260px;
+  }
+
+  .destacados-proyecto-vertical {
+    height: 520px;
+  }
+
+
+}
