@@ -26,6 +26,8 @@ li a {
 /* Change the link and background color on hover */
 li a:hover {
   font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
 #menu-enlaces {
