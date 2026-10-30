@@ -42,11 +42,12 @@
 
 
  <!-- Proyectos desctacados IAN Ahora con bootstrap-->
-<section class="destacados-seccion" aria-labelledby="destacados-encabezado">
-   <h1 class="separacion"> Hitghlighted Projects </h1>
+   
+     <section class="destacados-seccion" aria-labelledby="destacados-encabezado">
+    <h1 class="separacion"> Hitghlighted Projects </h1>
     <div class="destacados-container row g-0 flex-nowrap flex-column flex-sm-row">
       <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
-                <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
           <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-fashion-modal" aria-label="Ver Fashion Week en grande">
             <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/London F.jpg" alt="Proyecto Fashion Week">
             <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/fashionweek.mp4" muted loop playsinline preload="none"></video>
@@ -110,6 +111,32 @@
       </div>
     </div>
   </div>
+  <div class="modal fade" id="destacados-ryan-modal" tabindex="-1" aria-label="Vídeo de Ryan" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-ryan-video" class="w-100 d-block" src="previews/ryan.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="destacados-fashion-modal" tabindex="-1" aria-label="Vídeo de Fashion Week" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-fashion-video" class="w-100 d-block" src="previews/fashionweek.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
   
   <!--upcoming date--> 
 <h1> Upcoming Dates </h1>
