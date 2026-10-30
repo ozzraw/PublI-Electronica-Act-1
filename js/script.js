@@ -54,7 +54,7 @@ document.querySelectorAll(".destacados-preview").forEach(preview => {
   preview.addEventListener("mouseenter", () => {
     video.play().then(() => {
       // Si el ratón ya salió mientras cargaba, detenemos la reproducción.
-      if (!preview.matches(":hover")) {
+      if (!preview.matches(":hover") || document.querySelector(".modal.show")) {
         video.pause();
         video.currentTime = 0;
       }
@@ -66,3 +66,78 @@ document.querySelectorAll(".destacados-preview").forEach(preview => {
     video.currentTime = 0;
   });
 });
+
+// Cargamos YouTube al abrir y lo descargamos al cerrar para detener el sonido.
+const reproductor = document.querySelector("#destacados-reproductor");
+const youtube = document.querySelector("#destacados-youtube");
+
+if (reproductor && youtube) {
+  reproductor.addEventListener("show.bs.modal", event => {
+    const enlace = event.relatedTarget;
+    const id = enlace?.dataset.youtubeId;
+    if (!id || !/^[a-zA-Z0-9_-]{11}$/.test(id)) {
+      event.preventDefault();
+      return;
+    }
+
+    document.querySelectorAll(".destacados-preview video").forEach(video => {
+      video.pause();
+      video.currentTime = 0;
+    });
+    youtube.title = enlace.getAttribute("aria-label") || "Reproductor de YouTube";
+    youtube.src = enlace.dataset.youtubeEmbed || `https://www.youtube.com/embed/${id}?rel=0`;
+  });
+
+  reproductor.addEventListener("hidden.bs.modal", () => {
+    youtube.removeAttribute("src");
+  });
+}
+
+// ROB: reproducir en grande al abrir y detener al cerrar.
+const robModal = document.querySelector("#destacados-rob-modal");
+const robVideo = document.querySelector("#destacados-rob-video");
+
+if (robModal && robVideo) {
+  robModal.addEventListener("shown.bs.modal", () => {
+    document.querySelectorAll(".destacados-preview video").forEach(video => video.pause());
+    robVideo.play().catch(() => {});
+  });
+
+  robModal.addEventListener("hidden.bs.modal", () => {
+    robVideo.pause();
+    robVideo.currentTime = 0;
+  });
+}
+
+// Ryan: el mismo comportamiento que ROB.
+const ryanModal = document.querySelector("#destacados-ryan-modal");
+const ryanVideo = document.querySelector("#destacados-ryan-video");
+
+if (ryanModal && ryanVideo) {
+  ryanModal.addEventListener("shown.bs.modal", () => {
+    document.querySelectorAll(".destacados-preview video").forEach(video => video.pause());
+    ryanVideo.play().catch(() => {});
+  });
+
+  ryanModal.addEventListener("hidden.bs.modal", () => {
+    ryanVideo.pause();
+    ryanVideo.currentTime = 0;
+  });
+}
+
+// Fashion Week: reproducir en grande y detener al cerrar.
+const fashionModal = document.querySelector("#destacados-fashion-modal");
+const fashionVideo = document.querySelector("#destacados-fashion-video");
+
+if (fashionModal && fashionVideo) {
+  fashionModal.addEventListener("shown.bs.modal", () => {
+    document.querySelectorAll(".destacados-preview video").forEach(video => video.pause());
+    fashionVideo.play().catch(() => {});
+  });
+
+  fashionModal.addEventListener("hidden.bs.modal", () => {
+    fashionVideo.pause();
+    fashionVideo.currentTime = 0;
+  });
+}
+
