@@ -8,6 +8,66 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
+<!-- Inicio Francis-->
+  <ul>
+  <li><a onclick="mostrarMenu(); return false;">GENESYS</a></li>
+
+  <div id="menu-enlaces">
+    <br>
+    <li><a href="#home">home</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#musicaymoda">music & fashion</a></li>
+    <li><a href="#calendario">upcoming dates</a></li>
+    <li><a href="#contact">contact</a></li>
+  </div>
+</ul>
+
+    <div id="animacion"></div>
+    <script src="libraries/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+
+<h1 class="separacion"> upcoming dates </h1>
+
+<div class="cards">
+  <div class="card">
+    <img src="img1.jpeg" alt="Avatar">
+    <div class="container">
+       <h2 class="jura">BABY PANTERA — London Fashion Week </h2>
+      <p class="jura"> 12.06.26 | 20:00 – 23:00 </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img2.jpeg" alt="Avatar">
+    <div class="container">
+      <h2 class="jura">MMA — Underground Sessions</h2>
+      <p class="jura">19.06.26 | 22:15 – 02:00</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="img3.jpeg" alt="Avatar">
+    <div class="cardcontainer">
+     <h2 class="jura">LOGAN — OuterNet 
+      <br>Festival</h2>
+      <p class="jura">03.07.26 | 18:00 – 04:00</p>
+    </div>
+  </div>
+</div>
+
+
+<h1>subscription</h1>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+</form>
+
+<button class="boton" type="button" onclick="alert('You\'re in. Stay tuned for what\'s next.')">SUBSCRIBE</button>
   
 <!-- Proyectos desctacados IAN-->
   <section class="destacados-seccion" aria-labelledby="destacados-encabezado">
