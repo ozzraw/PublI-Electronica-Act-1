@@ -60,7 +60,7 @@ h1 {
 }
 
 .separacion {
-  margin-top: 0px;
+  margin-top: 850px;
 }
 
 
@@ -214,15 +214,4 @@ p {
     height: 520px;
   }
 
-/* SECCION HOME */
 
-#home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-#animacion {
-    width: 100%;
-    height: 100%;
-}
