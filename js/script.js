@@ -140,4 +140,3 @@ if (fashionModal && fashionVideo) {
     fashionVideo.currentTime = 0;
   });
 }
-
