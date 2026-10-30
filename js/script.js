@@ -3,8 +3,8 @@ var halfwing1;
 var halfwing2;
 
 function preload() {
-    halfwing1 = loadImage("halfwing1.png");
-    halfwing2 = loadImage("halfwing2.png");
+    halfwing1 = loadImage("GENESYSY%20IMAGES%20RESOURCES/halfwing1.png");
+    halfwing2 = loadImage("GENESYSY%20IMAGES%20RESOURCES/halfwing2.png");
 }
 
 function setup() {
