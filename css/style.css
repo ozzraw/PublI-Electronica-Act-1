@@ -213,14 +213,3 @@ p {
   .destacados-proyecto-vertical {
     height: 520px;
   }
-}
-#home {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-}
-
-#animacion {
-    width: 100%;
-    min-height: 100vh;
-}
