@@ -27,8 +27,6 @@ li a {
 /* Change the link and background color on hover */
 li a:hover {
   font-weight: bold;
-    color: white;
-    text-decoration: none;
 }
 
 #menu-enlaces {
@@ -36,22 +34,9 @@ li a:hover {
 }
 
 canvas {
-    display: block;
-    position: relative;
-    z-index: 0;
-    pointer-events: none;
-}
-
-#home {
-    position: relative;
-    width: 100%;
-    min-height: 800px;
-}
-
-#animacion {
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .jura {
@@ -73,7 +58,7 @@ h1 {
 }
 
 .separacion {
-  margin-top: 150px;
+  margin-top: 850px;
 }
 
 
@@ -181,9 +166,6 @@ input[type=text] {
   opacity: 1;
 }
 
-.destacados-preview:hover {
-    outline: 3px solid red;
-}
 /*Fashion Maria*/
 p {
     font-size: 15px;
@@ -229,27 +211,4 @@ p {
   .destacados-proyecto-vertical {
     height: 520px;
   }
-
-/*boton*/
-.boton-menu {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.icono-menu {
-    font-size: 18px;
-    font-weight: 300;
-    transition: transform 0.3s ease;
-}
-
-
-.boton-menu:hover {
-    color: #999;
-}
-
-.boton-menu:hover .icono-menu {
-    transform: scale(1.2);
 }

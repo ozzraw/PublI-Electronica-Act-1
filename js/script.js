@@ -8,12 +8,9 @@ function preload() {
 }
 
 function setup() {
-    let canvas = createCanvas(windowWidth, 800);
-    canvas.parent("animacion");
+    createCanvas(windowWidth, 800);
     imageMode(CENTER);
 }
-
-canvas.parent("animacion");
 
 function draw() {
     background(0);
@@ -54,17 +51,20 @@ document.querySelectorAll(".destacados-preview").forEach(preview => {
   const video = preview.querySelector("video");
   if (!video) return;
 
-preview.addEventListener("mouseenter", () => {
-    video.muted = true;
-    video.play().catch(error => {
-        console.error("Error al reproducir vídeo:", error);
-    });
-});
+  preview.addEventListener("mouseenter", () => {
+    video.play().then(() => {
+      // Si el ratón ya salió mientras cargaba, detenemos la reproducción.
+      if (!preview.matches(":hover") || document.querySelector(".modal.show")) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    }).catch(() => {});
+  });
 
-preview.addEventListener("mouseleave", () => {
+  preview.addEventListener("mouseleave", () => {
     video.pause();
     video.currentTime = 0;
-});
+  });
 });
 
 // Cargamos YouTube al abrir y lo descargamos al cerrar para detener el sonido.
