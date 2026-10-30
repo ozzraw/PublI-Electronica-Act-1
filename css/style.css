@@ -227,3 +227,25 @@ p {
   }
 
 
+.boton-menu {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icono-menu {
+    font-size: 18px;
+    font-weight: 300;
+    transition: transform 0.3s ease;
+}
+
+
+.boton-menu:hover {
+    color: #999;
+}
+
+.boton-menu:hover .icono-menu {
+    transform: scale(1.2);
+}
