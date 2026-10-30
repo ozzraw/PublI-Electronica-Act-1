@@ -146,7 +146,7 @@ input[type=text] {
   height: 700px;
   margin-left: -20px;
   margin-right: -20px;
-  padding: 0;
+  padding: 20px;
 }
 
 /* Las tres columnas tienen el mismo ancho. */
