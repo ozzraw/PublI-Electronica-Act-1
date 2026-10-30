@@ -1,3 +1,133 @@
+/*Franciss*/
+body {
+    background-color: black;
+}
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  top: 0;  margin: 0;
+  padding: 0;
+  width: 200px;
+  color: rgb(255, 255, 255);
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 200;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link and background color on hover */
+li a:hover {
+  font-weight: bold;
+}
+
+#menu-enlaces {
+  display: none;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.jura {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Jura", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #c8c8c8;
+  
+  text-align: center;
+  font-size: 40px;
+}
+
+.separacion {
+  margin-top: 850px;
+}
+
+
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  
+}
+
+.card {
+  width: 23%;
+  background-color: lab(95.76% -1.76 -2.26);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.cardcontainer {
+  padding: 2px 16px;
+}
+
+h2, p {
+  text-align: center;
+  text-decoration: solid;
+
+}
+
+label {
+display: block;
+color: #c8c8c8;
+margin-left: 20px;
+margin-right: 20px;
+background-color: black;
+}
+
+input[type=text] {
+  width: 95%;
+  padding: 5px;
+  margin: 20px;
+  border: none;
+  border-bottom: 1px solid hsl(0, 0%, 46%);
+  background-color: transparent;
+  color: white;
+}
+
+.boton {
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block;
+  margin: 20px auto;
+  padding: 12px 35px;
+  color: #c8c8c8;
+  background-color: transparent;
+  border: 1px solid #c8c8c8;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  color: black;
+  background-color: #c8c8c8;
+}
+
 /*Proyectos destacados */
 
 
