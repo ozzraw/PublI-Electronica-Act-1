@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genesys</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+    <!--links para noto sans-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<!--links para Jura-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- Inicio Francis-->
+
+  <ul>
+  <li><a onclick="mostrarMenu(); return false;">GENESYS</a></li>
+
+  <div id="menu-enlaces">
+    <br>
+    <li><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">home</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#fashion">fashion</a></li>
+    <li><a href="#calendario">upcoming dates</a></li>
+    <li><a href="#contact">contact</a></li>
+  </div>
+</ul>
+ <div id="home">
+    <script src="libraries/p5.min.js"></script>
+    <script src="js/sketch.js"></script>
+    </div>
+
+
+ <!-- Proyectos desctacados IAN Ahora con bootstrap-->
+   
+     <section class="destacados-seccion" aria-labelledby="destacados-encabezado" id="projects">
+    <h1 class="separacion"> Hitghlighted Projects </h1>
+    <div class="destacados-container row g-0 flex-nowrap flex-column flex-sm-row">
+      <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-fashion-modal" aria-label="Ver Fashion Week en grande">
+            <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/London F.jpg" alt="Proyecto Fashion Week">
+            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/fashionweek.mp4" muted loop playsinline preload="none"></video>
+          </button>
+        </section>
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-ryan-modal" aria-label="Ver Ryan en grande">
+            <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/Ryan.jpg" alt="Proyecto Ryan">
+            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/ryan.mp4" muted loop playsinline preload="none"></video>
+          </button>
+        </section>
+      </div>
+      <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-reproductor" data-youtube-id="W6VWfYvDp6I" data-youtube-embed="https://www.youtube.com/embed/W6VWfYvDp6I?si=Glj8OT7mNYrET9wA" aria-label="Reproducir VARG">
+            <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/VARG.jpg" alt="Proyecto VARG">
+            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/varg.mp4" muted loop playsinline preload="none"></video>
+          </button>
+        </section>
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-horizontal">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-rob-modal" aria-label="Ver ROB en grande">
+            <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/ROB.jpg" alt="Proyecto ROB">
+            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/rob.mp4" muted loop playsinline preload="none"></video>
+          </button>
+        </section>
+      </div>
+      <div class="destacados-columna col-12 col-sm-4 d-flex flex-column">
+        <section class="d-flex flex-column flex-fill p-0 destacados-proyecto destacados-proyecto-vertical">
+          <button type="button" class="destacados-preview position-relative flex-fill overflow-hidden d-block border-0 p-0 bg-transparent text-start" data-bs-toggle="modal" data-bs-target="#destacados-reproductor" data-youtube-id="TWjwLFihjBY" data-youtube-embed="https://www.youtube.com/embed/TWjwLFihjBY?si=hdKQr8_SlWZWrAzA" aria-label="Reproducir Boxing">
+            <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="IMG/UFC.jpg" alt="Proyecto Boxing">
+            <video class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="previews/box.mp4" muted loop playsinline preload="none"></video>
+          </button>
+        </section>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="destacados-reproductor" tabindex="-1" aria-label="Reproductor de vídeo" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar reproductor"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9">
+            <iframe id="destacados-youtube" title="Reproductor de YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap abre el mismo vídeo de ROB en una ventana mas grande. -->
+  <div class="modal fade" id="destacados-rob-modal" tabindex="-1" aria-label="Vídeo de ROB" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-rob-video" class="w-100 d-block" src="previews/rob.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="destacados-ryan-modal" tabindex="-1" aria-label="Vídeo de Ryan" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-ryan-video" class="w-100 d-block" src="previews/ryan.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="destacados-fashion-modal" tabindex="-1" aria-label="Vídeo de Fashion Week" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content bg-dark">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar vídeo"></button>
+        </div>
+        <div class="modal-body p-0">
+          <video id="destacados-fashion-video" class="w-100 d-block" src="previews/fashionweek.mp4" controls playsinline preload="none"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Fashion de Maria-->
+<div class="container-fluid" id="fashion">
+    <br>
+    <br>
+    <h1>Fashion</h1>
+    <p class="jura" style="color: #c8c8c8;">Beyond the form</p>
+  </div>
+
+  <div class="container-models">
+    <div class="container-modelsImg">
+      <img src="IMG/black_model.png" alt="Black model" class="model-img">
+    </div>
+
+    <div class="container-modelsText">
+      <p class="jura" style="color: #c8c8c8;">Beyond the form. Beyond the ordinary.</p>
+      <p class="jura" style="color: #c8c8c8;">Discover a new vision of fashion, where creativity meets identity.</p>
+    </div>
+
+    <div class="container-modelsImg">
+      <img src="IMG/white_model.png" alt="White model" class="model-img">
+    </div>
+  </div>
+
+  <div>
+    <h1 style="font-size: 20px;">Enjoy our fashion shows</h1>
+    <p class="jura" style="color: #c8c8c8;">Discover our world of fashion</p>
+  </div>
+<br>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img class="d-block mx-auto" src="IMG/fashion_show_1.jpg" style="width: 500px;" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block mx-auto" src="IMG/fashion_show_2.jpg" style="width: 500px;" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block mx-auto" src="IMG/fashion_show_3.jpg" style="width: 500px;" alt="Third slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block mx-auto" src="IMG/fashion_show_4.jpg" style="width: 500px;" alt="Fourth slide">
+      </div>
+      
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br>
+<br>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!--upcoming date--> 
+<h1 id="calendario"> Upcoming Dates </h1>
+  <div class="cards">
+  <div class="card">
+    <img src="IMG/img1.jpeg" alt="Avatar">
+    <div class="container">
+       <h2 class="jura">BABY PANTERA — London Fashion Week </h2>
+      <p class="jura"> 12.06.26 | 20:00 – 23:00 </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/img2.jpeg" alt="Avatar">
+    <div class="container">
+      <h2 class="jura">MMA — Underground Sessions</h2>
+      <p class="jura">19.06.26 | 22:15 – 02:00</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="IMG/img3.jpeg" alt="Avatar">
+    <div class="cardcontainer">
+     <h2 class="jura">LOGAN — OuterNet 
+      <br>Festival</h2>
+      <p class="jura">03.07.26 | 18:00 – 04:00</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!--Formulario-->
+<h1 id="contact">Subscription</h1>
+
+<form>
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="fname">
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lname">
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email">
+</form>
+
+<button class="boton" type="button" onclick="alert('You\'re in. Stay tuned for what\'s next.')">SUBSCRIBE</button>
+  
+</body>
+</html>
