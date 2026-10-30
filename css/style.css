@@ -181,6 +181,9 @@ input[type=text] {
   opacity: 1;
 }
 
+.destacados-preview:hover {
+    outline: 3px solid red;
+}
 /*Fashion Maria*/
 p {
     font-size: 15px;
