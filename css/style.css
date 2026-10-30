@@ -60,7 +60,7 @@ h1 {
 }
 
 .separacion {
-  margin-top: 850px;
+  margin-top: 0px;
 }
 
 
@@ -213,3 +213,16 @@ p {
   .destacados-proyecto-vertical {
     height: 520px;
   }
+
+/* SECCION HOME */
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#animacion {
+    width: 100%;
+    height: 100%;
+}
